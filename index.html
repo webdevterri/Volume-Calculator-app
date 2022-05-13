@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Volume Calculator App | webdevterri</title>
+  </head>
+  <body>
+    <h1>Volume Calculator</h1>
+    <p class="directions">
+      <span class="directions-span">Directions</span>: Enter the width, height and length (depth) to calculate the
+      volume. Use the same unit for each input. For example, do not use inches
+      for one input and feet for another.
+    </p>
+    <main>
+      <div class="important">
+        <img
+          src="helpful-box-labels.png"
+          alt="helpful box labels."
+          height="500px"
+        />
+        <div class="inputs">
+          <div class="pair">
+            <h3>height:</h3>
+            <input type="number" name="height" id="height" />
+          </div>
+          <div class="pair">
+            <h3>width:</h3>
+            <input type="number" name="width" id="width" />
+          </div>
+          <div class="pair">
+            <h3>length:</h3>
+            <input type="number" name="length" id="length" />
+          </div>
+          <button id="calculate">Calculate</button>
+        </div>
+      </div>
+      <div class="output">
+        <h2>Volume</h2>
+        <div id="volume"></div>
+      </div>
+    </main>
+    <footer>Copyright © 2022, webdevterri. All Rights Reserved.</footer>
+    <script src="index.js"></script>
+  </body>
+</html>

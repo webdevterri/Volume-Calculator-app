@@ -1,0 +1,142 @@
+/* 
+TODO: 
+- Add box shadows to button and Volume box
+- Align inputs vertically (they don't line up) 
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #1c1c1c;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: lighter;
+}
+
+h1,
+.directions {
+  text-align: center;
+  width: 80%;
+  line-height: 25px;
+}
+
+.directions-span {
+  text-decoration: underline;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+main {
+  background-color: paleturquoise;
+  color: #1c1c1c;
+  width: 80%;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15px;
+}
+
+img {
+  height: 150px;
+  width: 200px;
+  margin-bottom: 15px;
+}
+
+h3 {
+  margin-right: 25px;
+}
+
+.pair {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  height: 50px;
+  width: 50px;
+  border: none;
+}
+
+button {
+  background-color: palevioletred;
+  color: #1c1c1c;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 150px;
+  padding: 15px;
+  margin: 15px auto;
+}
+
+div.output {
+  background-color: palegreen;
+  height: 150px;
+  width: 200px;
+  border-radius: 15px;
+  text-align: center;
+  padding: 0 8px;
+}
+
+.output-num {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.output-error {
+  color: red;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+footer {
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
+}
+
+@media (min-width: 600px) {
+  img {
+    height: 200px;
+    width: 300px;
+    margin-bottom: 15px;
+  }
+}
+
+@media (min-width: 800px) {
+  .directions {
+    width: 60ch;
+  }
+  .important {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: 1000px) {
+  main {
+    width: 70%;
+  }
+}
